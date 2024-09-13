@@ -17,6 +17,26 @@ public class Exercise_04 {
 
         // write your code below
 
+        double d = 1.0;
+        System.out.println("double d is: " + d);
+
+        boolean b = true;
+        System.out.println("boolean b is: " + b);
+
+        char c = 'a';
+        System.out.println("char c is: " + c);
+
+        float f = 1.0f;
+        System.out.println("float f is: " + f);
+
+        long l = 1L;
+        System.out.println("long l is: " + l);
+
+        byte by = 1;
+        System.out.println("byte by is: " + by);
+
+        short sh = 1;
+        System.out.println("short sh is: " + sh);
     }
 
 }
