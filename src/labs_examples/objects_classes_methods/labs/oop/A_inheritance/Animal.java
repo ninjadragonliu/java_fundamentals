@@ -18,3 +18,12 @@ class Fish extends Animal
 {
     private int length;
 }
+
+class Dove extends Bird
+{
+    private String habitat;
+}
+class Goldfish extends Fish
+{
+    private String habitat;
+}
