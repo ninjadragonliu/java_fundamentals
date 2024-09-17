@@ -4,10 +4,6 @@ abstract class Animal
 {
     private String name;
     private String sound;
-    public Animal()
-    {
-
-    }
 }
 
 
