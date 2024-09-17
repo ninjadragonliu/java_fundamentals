@@ -1,4 +1,4 @@
-package labs_examples.objects_classes_methods.labs.oop.A_inheritance;
+package labs_examples.objects_classes_methods.labs.oop.A_inheritance.Animal;
 
 public class Animal
 {
@@ -10,14 +10,6 @@ public class Animal
     }
 }
 
-class Bird extends Animal
-{
-    private String color;
-}
-class Fish extends Animal
-{
-    private int length;
-}
 
 class Dove extends Bird
 {
