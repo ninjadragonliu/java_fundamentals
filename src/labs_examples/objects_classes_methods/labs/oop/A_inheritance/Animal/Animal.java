@@ -11,11 +11,4 @@ public class Animal
 }
 
 
-class Dove extends Bird
-{
-    private String habitat;
-}
-class Goldfish extends Fish
-{
-    private String habitat;
-}
+
