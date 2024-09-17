@@ -4,6 +4,7 @@ class Animal
 {
     private String name;
     private String sound;
+    private int speed;
 
     public Animal(String name, String sound)
     {
@@ -19,6 +20,23 @@ class Animal
     public String getSound()
     {
         return sound;
+    }
+    public int getSpeed()
+    {
+        return speed;
+    }
+
+    public void setSpeed(int speed)
+    {
+        this.speed = speed;
+    }
+    public String noise()
+    {
+        return "Animal " + name + " says " + sound;
+    }
+    public String move()
+    {
+        return "Animal " + name + " moves with speed " + speed;
     }
 }
 
