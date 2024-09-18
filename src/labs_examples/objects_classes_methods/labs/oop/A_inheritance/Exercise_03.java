@@ -3,8 +3,9 @@ package labs_examples.objects_classes_methods.labs.oop.A_inheritance;
 /**
  * Why does the output print in the order it does?
  *
- * You answer:
- *
+ * You answer: Because C_1 is a subclass of B_1 and B_1 is a subclass of A_1.
+ * By default, C_1 constructor is called but Java calls it's super class constructor first.
+ * so C_1 constructor calls B_1 constructor and B_1 constructor calls A_1 constructor
  */
 
 class A_1 {
