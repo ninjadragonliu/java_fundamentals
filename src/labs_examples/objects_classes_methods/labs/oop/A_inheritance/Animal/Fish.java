@@ -7,4 +7,20 @@ class Fish extends Animal
     public Fish(String name, String sound) {
         super(name, sound);
     }
+
+    public int getLength() {
+        return length;
+    }
+
+    public void setLength(int length) {
+        this.length = length;
+    }
+    
+    @Override
+    public String noise() {
+        return "Fish " + super.getName() + " says " + super.getSound();
+    }
+    public void swim() {
+        System.out.println("Fish " + super.getName() + " is swimming");
+    }
 }

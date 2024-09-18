@@ -7,4 +7,17 @@ class Bird extends Animal
     public Bird(String name, String sound) {
         super(name, sound);
     }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    @Override
+    public String noise() {
+        return "Bird " + super.getName() + " says " + super.getSound();
+    }
 }
