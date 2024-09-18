@@ -1,7 +1,8 @@
 
 Without running the code below, please tell me what it will print.
 
-
+Parent called (wrong)
+Child called
 
 public class InheritanceTest
 {
