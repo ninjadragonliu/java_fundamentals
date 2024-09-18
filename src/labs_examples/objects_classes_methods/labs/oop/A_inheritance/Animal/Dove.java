@@ -8,9 +8,16 @@ class Dove extends Bird
         super(name, sound);
     }
 
+    public String getHabitat() {
+        return habitat;
+    }
+
+    public void setHabitat(String habitat) {
+        this.habitat = habitat;
+    }
     @Override
-    public String noise() {
-        return "Dove " + super.getName() + " says " + super.getSound();
+    public void Speak() {
+        System.out.println("Dove " + super.getName() + " says " + super.getSound());
     }
     @Override
     public void fly() {

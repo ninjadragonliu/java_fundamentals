@@ -17,8 +17,8 @@ class Fish extends Animal
     }
     
     @Override
-    public String noise() {
-        return "Fish " + super.getName() + " says " + super.getSound();
+    public void Speak() {
+        System.out.println("Fish " + super.getName() + " says " + super.getSound());
     }
     public void swim() {
         System.out.println("Fish " + super.getName() + " is swimming");

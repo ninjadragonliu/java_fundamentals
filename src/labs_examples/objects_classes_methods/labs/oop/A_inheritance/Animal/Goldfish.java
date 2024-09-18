@@ -8,6 +8,11 @@ class Goldfish extends Fish
         super(name, sound);
     }
     @Override
+    public void Speak()
+    {
+        System.out.println("Goldfish " + super.getName() + " says " + super.getSound());
+    }
+    @Override
     public void swim() {
         System.out.println("Goldfish " + super.getName() + " is swimming");
     }

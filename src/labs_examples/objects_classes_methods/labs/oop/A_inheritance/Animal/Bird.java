@@ -17,8 +17,8 @@ class Bird extends Animal
     }
 
     @Override
-    public String noise() {
-        return "Bird " + super.getName() + " says " + super.getSound();
+    public void Speak() {
+        System.out.println("Bird " + super.getName() + " says " + super.getSound());
     }
 
     public void fly() {
