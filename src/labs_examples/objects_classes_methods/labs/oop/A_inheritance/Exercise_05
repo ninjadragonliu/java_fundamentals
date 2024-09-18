@@ -3,6 +3,8 @@ Without running the code below, please tell me what will print. Why?
 
 
 
+Both are called because the child class extends the parent class
+and by default Java calls a super in the child class constructor
 
 public class InheritanceTest
 {
