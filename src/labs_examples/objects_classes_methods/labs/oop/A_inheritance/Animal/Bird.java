@@ -20,4 +20,8 @@ class Bird extends Animal
     public String noise() {
         return "Bird " + super.getName() + " says " + super.getSound();
     }
+
+    public void fly() {
+        System.out.println("Bird " + super.getName() + " is flying");
+    }
 }
