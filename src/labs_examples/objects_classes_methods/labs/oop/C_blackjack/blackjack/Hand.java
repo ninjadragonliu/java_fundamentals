@@ -33,7 +33,7 @@ public class Hand {
         return handValue > 21;
     }
     // Adjust hand value based on Ace being 1 or 11
-    private int calculateHandValue() {
+    private void calculateHandValue() {
         int totalValue = 0;
         int numAces = 0;
 
@@ -56,6 +56,6 @@ public class Hand {
             numAces--;
         }
 
-        return totalValue;
+        handValue = totalValue;
     }
 }
