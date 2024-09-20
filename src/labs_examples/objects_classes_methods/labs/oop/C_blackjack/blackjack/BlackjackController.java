@@ -30,17 +30,20 @@ public class BlackjackController {
         deck.deal(computer);
         deck.deal(computer);
 
+
+        // Show player's hand
+        System.out.println(player.name + ", your hand is " + player.hand.getHandValue() + " (" + player.hand.getCards() + ")");
+
         if(player.hand.getHandValue() == 21) {
             System.out.println("Blackjack! You win!");
+            System.out.println("Computer's hand: " + computer.hand.getHandValue() + " (" + computer.hand.getCards() + ")");
             return;
         }
         if(computer.hand.getHandValue() == 21) {
             System.out.println("Blackjack! You lose!");
+            System.out.println("Computer's hand: " + computer.hand.getHandValue() + " (" + computer.hand.getCards() + ")");
             return;
         }
-        // Show player's hand
-        System.out.println(player.name + ", your hand is " + player.hand.getHandValue() + " (" + player.hand.getCards() + ")");
-
         // Player turn
         String answer;
         while (true) {
