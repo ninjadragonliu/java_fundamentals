@@ -9,14 +9,6 @@ public class Card {
         this.cardValue = cardValue;
     }
 
-    public static char[] getSuit() {
-        return suit;
-    }
-
-    public static void setSuit(char[] suit) {
-        Card.suit = suit;
-    }
-
     public int getCardValue() {
         return cardValue;
     }

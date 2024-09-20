@@ -29,4 +29,7 @@ public class Hand {
         cards.add(card);
         handValue += card.getCardValue();
     }
+    public boolean isBusted(){
+        return handValue > 21;
+    }
 }
