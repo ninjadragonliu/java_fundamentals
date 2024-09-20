@@ -30,6 +30,9 @@ public class BlackjackController {
         deck.deal(computer);
         deck.deal(computer);
 
+        // Set player's and computer's pot values
+        player.setPotValue(50);
+        computer.setPotValue(50);
 
         // Show player's hand
         System.out.println(player.name + ", your hand is " + player.hand.getHandValue() + " (" + player.hand.getCards() + ")");
