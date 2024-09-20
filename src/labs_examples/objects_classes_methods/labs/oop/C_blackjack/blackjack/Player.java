@@ -20,4 +20,12 @@ public class Player {
     public void setHand(Hand hand) {
         this.hand = hand;
     }
+
+    public int getPotValue() {
+        return potValue;
+    }
+
+    public void setPotValue(int potValue) {
+        this.potValue = potValue;
+    }
 }
