@@ -20,5 +20,12 @@ public class Deck {
             }
         }
     }
-    public
+    public void deal(Player player) {
+        int randomCard = (int) (Math.random() * 52);
+        while (usedCards.contains(randomCard)) {
+            randomCard = (int) (Math.random() * 52);
+        }
+        player.hand.addCard(cards[randomCard]);
+        usedCards.add(randomCard);
+    }
 }
