@@ -22,6 +22,10 @@ public class Card {
 
     // Getter for card value
     public int getCardValue() {
+        // Return 10 for Jack, Queen, King (values 11, 12, 13)
+        if (cardValue > 10) {
+            return 10;
+        }
         return cardValue;
     }
 
