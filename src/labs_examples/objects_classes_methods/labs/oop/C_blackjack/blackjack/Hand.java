@@ -27,6 +27,7 @@ public class Hand {
     }
     public void addCard(Card card){
         cards.add(card);
+        calculateHandValue();
     }
     public boolean isBusted(){
         return handValue > 21;
