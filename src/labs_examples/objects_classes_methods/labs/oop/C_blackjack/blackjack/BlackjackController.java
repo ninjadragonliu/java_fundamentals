@@ -34,7 +34,10 @@ public class BlackjackController {
             System.out.println("Blackjack! You win!");
             return;
         }
-
+        if(computer.hand.getHandValue() == 21) {
+            System.out.println("Blackjack! You lose!");
+            return;
+        }
         // Show player's hand
         System.out.println(player.name + ", your hand is " + player.hand.getHandValue() + " (" + player.hand.getCards() + ")");
 
