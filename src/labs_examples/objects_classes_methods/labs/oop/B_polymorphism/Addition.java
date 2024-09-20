@@ -11,3 +11,11 @@ public class Addition {
         return a + b;
     }
 }
+class OverloadingDemo {
+    public static void main(String[] args) {
+        Addition math = new Addition();
+        System.out.println("Add two integers: 5 + 10 = " + math.add(5, 10));
+        System.out.println("Add three integers: 5 + 10 + 15 = " + math.add(5, 10, 15));
+        System.out.println("Add two doubles: 5.5 + 10.5 = " + math.add(5.5, 10.5));
+    }
+}
