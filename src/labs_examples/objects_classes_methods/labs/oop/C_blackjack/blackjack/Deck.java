@@ -9,11 +9,14 @@ public class Deck {
     public Deck() {
         cards = new Card[52];
         usedCards = new ArrayList<>();
+        createDeck();
     }
 
     public void createDeck() {
         int cardNum = 0;
-        for (char suit : Card.suit) {
+        char[] suits = new char[]{'♠', '♦', '♥', '♣'}; // Moved to the Deck class for clarity
+
+        for (char suit : suits) {
             for (int value = 1; value <= 13; value++) {
                 cards[cardNum] = new Card(suit, value);
                 cardNum++;
