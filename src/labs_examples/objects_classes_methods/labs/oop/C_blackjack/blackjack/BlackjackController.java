@@ -1,5 +1,6 @@
 package labs_examples.objects_classes_methods.labs.oop.C_blackjack.blackjack;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class BlackjackController {
@@ -10,7 +11,7 @@ public class BlackjackController {
     }
     public static void playBlackjack() {
         Scanner sc = new Scanner(System.in);
-
+        Random random = new Random();
         // Create a deck and shuffle it
         Deck deck = new Deck();
 
@@ -24,15 +25,28 @@ public class BlackjackController {
         Player computer = new Player();
         computer.name = "Computer";
 
+        // Set player's and computer's pot values
+        player.setPotValue(50);
+        computer.setPotValue(50);
+
+        // Player places a bet
+        System.out.println(player.name + ", enter your bet: ");
+        int playerBet = sc.nextInt();
+        while (playerBet > player.potValue) {
+            System.out.println("You don't have enough pot value. Enter a smaller bet: ");
+            playerBet = sc.nextInt();
+        }
+        player.potValue -= playerBet;
+
+        // Computer places a random bet (between 1 and half its current pot value)
+        int computerBet = random.nextInt(computer.potValue / 2) + 1; // Random bet from 1 to half of computer's pot value
+        System.out.println(computer.name + " has placed a bet of: " + computerBet);
+
         // Deal two cards to each player
         deck.deal(player);
         deck.deal(player);
         deck.deal(computer);
         deck.deal(computer);
-
-        // Set player's and computer's pot values
-        player.setPotValue(50);
-        computer.setPotValue(50);
 
         // Show player's hand
         System.out.println(player.name + ", your hand is " + player.hand.getHandValue() + " (" + player.hand.getCards() + ")");
