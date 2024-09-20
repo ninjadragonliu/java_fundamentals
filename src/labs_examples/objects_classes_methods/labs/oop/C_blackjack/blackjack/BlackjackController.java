@@ -33,6 +33,10 @@ public class BlackjackController {
             System.out.println("You or the computer busted. No points awarded.");
             return;
         }
+        if(player.hand.getHandValue() == 21) {
+            System.out.println("Blackjack! You win!");
+            return;
+        }
 
         // Show player's hand
         System.out.println(player.name + ", your hand is " + player.hand.getHandValue() + " (" + player.hand.getCards() + ")");
