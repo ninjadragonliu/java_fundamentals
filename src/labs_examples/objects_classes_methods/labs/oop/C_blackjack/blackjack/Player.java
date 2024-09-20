@@ -1,4 +1,4 @@
-package labs_examples.objects_classes_methods.labs.oop.C_blackjack.exercise1;
+package labs_examples.objects_classes_methods.labs.oop.C_blackjack.blackjack;
 
 public class Player {
     String name;
@@ -27,5 +27,13 @@ public class Player {
 
     public void setPotValue(int potValue) {
         this.potValue = potValue;
+    }
+
+    public boolean computerAI() {
+        if(hand.getHandValue() < 16) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
