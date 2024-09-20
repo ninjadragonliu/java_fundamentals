@@ -8,4 +8,20 @@ public class Card {
         this.suit = new char[]{suit};
         this.cardValue = cardValue;
     }
+
+    public static char[] getSuit() {
+        return suit;
+    }
+
+    public static void setSuit(char[] suit) {
+        Card.suit = suit;
+    }
+
+    public int getCardValue() {
+        return cardValue;
+    }
+
+    public void setCardValue(int cardValue) {
+        this.cardValue = cardValue;
+    }
 }
