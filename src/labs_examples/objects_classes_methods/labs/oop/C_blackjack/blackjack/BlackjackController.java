@@ -29,10 +29,7 @@ public class BlackjackController {
         deck.deal(player);
         deck.deal(computer);
         deck.deal(computer);
-        if(player.hand.isBusted() || computer.hand.isBusted()) {
-            System.out.println("You or the computer busted. No points awarded.");
-            return;
-        }
+
         if(player.hand.getHandValue() == 21) {
             System.out.println("Blackjack! You win!");
             return;
