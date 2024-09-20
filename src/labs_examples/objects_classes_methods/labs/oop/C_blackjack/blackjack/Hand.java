@@ -19,7 +19,7 @@ public class Hand {
     }
 
     public int getHandValue() {
-        return calculateHandValue();
+        return handValue;
     }
 
     public void setHandValue(int handValue) {
