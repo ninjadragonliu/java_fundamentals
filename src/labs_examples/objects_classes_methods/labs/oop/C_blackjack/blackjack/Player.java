@@ -16,4 +16,12 @@ public class Player {
             return false;
         }
     }
+
+    public Hand getHand() {
+        return hand;
+    }
+
+    public void setHand(Hand hand) {
+        this.hand = hand;
+    }
 }
