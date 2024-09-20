@@ -4,6 +4,8 @@ public class BlackjackController {
 
     public static void main(String[] args) {
         Deck deck = new Deck();
+        Player player = new Player();
+        Player computer = new Player();
     }
 
 }
