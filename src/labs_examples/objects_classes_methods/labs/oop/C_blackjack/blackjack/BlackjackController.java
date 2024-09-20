@@ -39,7 +39,7 @@ public class BlackjackController {
             System.out.println("Do you want another card? (yes/no)");
             answer = sc.nextLine();
 
-            if (answer.equalsIgnoreCase("yes")) {
+            if (answer.equalsIgnoreCase("yes") || answer.equalsIgnoreCase("y")) {
                 deck.deal(player);
                 System.out.println("Your hand is now " + player.hand.getHandValue() + " (" + player.hand.getCards() + ")");
                 if (player.hand.isBusted()) {
