@@ -36,6 +36,24 @@ public class Card {
     // Override toString() method to print card details nicely
     @Override
     public String toString() {
-        return suit + " " + cardValue;
+        String valueStr;
+        // Translate 11, 12, 13 to Jack, Queen, King
+        switch (cardValue) {
+            case 11:
+                valueStr = "Jack";
+                break;
+            case 12:
+                valueStr = "Queen";
+                break;
+            case 13:
+                valueStr = "King";
+                break;
+            case 1:
+                valueStr = "Ace"; // Handle Ace if needed
+                break;
+            default:
+                valueStr = String.valueOf(cardValue);
+        }
+        return suit + " " + valueStr;
     }
 }
