@@ -2,19 +2,13 @@ package labs_examples.objects_classes_methods.labs.oop.D_my_oop.digimon_battle_s
 
 public abstract class Digimon {
 
-    private String name;
-    private int hp;
-    private int attack;
-    private int defense;
-    private int speed;
-    private int level;
-    private int experience;
-    private int maxHp;
-    private int maxAttack;
-    private int maxDefense;
-    private int maxSpeed;
-    private int maxLevel;
-    private int maxExperience;
+    protected String name;
+    protected int hp;
+    protected int attack;
+    protected int defense;
+    protected int speed;
+    protected int level;
+    protected int experience;
 
     public Digimon(String name, int hp, int attack, int defense, int speed) {
         this.name = name;
@@ -24,12 +18,6 @@ public abstract class Digimon {
         this.speed = speed;
         this.level = level;
         this.experience = experience;
-        this.maxHp = hp;
-        this.maxAttack = attack;
-        this.maxDefense = defense;
-        this.maxSpeed = speed;
-        this.maxLevel = level;
-        this.maxExperience = experience;
     }
 
 }
