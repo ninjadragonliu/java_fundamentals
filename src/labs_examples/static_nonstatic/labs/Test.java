@@ -19,4 +19,9 @@ public class Test {
     public void someMethod2() {
         System.out.println("I'm in a non-static method in Test");
     }
+    public void someMethod3() {
+        someMethod2();
+        someMethod();
+        System.out.println("I'm in a non-static method 2 in Test");
+    }
 }
