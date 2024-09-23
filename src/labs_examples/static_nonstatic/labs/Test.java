@@ -24,4 +24,10 @@ public class Test {
         someMethod();
         System.out.println("I'm in a non-static method 2 in Test");
     }
+    public void someMethod4() {
+        Test2 someObject2 = new Test2();
+        someObject2.someMethod();
+        someObject2.someMethod2();
+        System.out.println("I'm in a non-static method 3 in Test");
+    }
 }
