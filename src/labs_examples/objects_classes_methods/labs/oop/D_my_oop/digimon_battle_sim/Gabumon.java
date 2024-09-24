@@ -5,9 +5,9 @@ public class Gabumon extends Digimon {
         super("Gabumon", "Data", 100, 30, 25, 10);
     }
 
+
     @Override
-    public void attack(Digimon digimon) {
+    public void attack(Digimon target, Attack chosenAttack) {
 
     }
-
 }

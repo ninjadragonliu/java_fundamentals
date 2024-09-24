@@ -26,7 +26,8 @@ public abstract class Digimon {
 
         this.attacks = new ArrayList<>();
     }
-    public abstract void attack(Digimon digimon);
+    // Abstract method to attack
+    public abstract void attack(Digimon target, Attack chosenAttack);
 
     // Method to defend
     public void defend(int damage) {
