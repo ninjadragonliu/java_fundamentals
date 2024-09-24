@@ -1,5 +1,7 @@
 package labs_examples.objects_classes_methods.labs.oop.D_my_oop.digimon_battle_sim;
 
+import java.util.ArrayList;
+
 public abstract class Digimon {
 
     protected String name;
@@ -10,6 +12,7 @@ public abstract class Digimon {
     protected int speed;
     protected int level;
     protected int experience;
+    protected ArrayList<Attack> attacks;
 
     public Digimon(String name, String type, int hp, int attack, int defense, int speed) {
         this.name = name;
@@ -20,6 +23,8 @@ public abstract class Digimon {
         this.speed = speed;
         this.level = level;
         this.experience = experience;
+
+        this.attacks = new ArrayList<>();
     }
     public abstract void attack(Digimon digimon);
 
