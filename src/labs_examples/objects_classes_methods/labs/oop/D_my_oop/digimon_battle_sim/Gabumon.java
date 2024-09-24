@@ -3,6 +3,8 @@ package labs_examples.objects_classes_methods.labs.oop.D_my_oop.digimon_battle_s
 public class Gabumon extends Digimon {
     public Gabumon() {
         super("Gabumon", "Data", 100, 30, 25, 10);
+        this.addAttack(new Attack("Blue Blaster", 30));
+        this.addAttack(new Attack("Horn Attack", 40));
     }
 
 
