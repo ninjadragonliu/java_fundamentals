@@ -5,4 +5,14 @@ public class Gabumon extends Digimon {
         super(name, hp, attack, defense, speed);
     }
 
+    @Override
+    public void attack(Digimon digimon) {
+
+    }
+
+    @Override
+    public void defense(Digimon digimon) {
+
+    }
+
 }
