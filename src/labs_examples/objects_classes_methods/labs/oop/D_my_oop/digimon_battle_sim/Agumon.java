@@ -4,6 +4,8 @@ public class Agumon extends Digimon{
 
     public Agumon() {
         super("Agumon", "Vaccine", 100, 30, 20, 15);
+        this.addAttack(new Attack("Pepper Breath", 30));
+        this.addAttack(new Attack("SpitFire", 40));
     }
 
     @Override
