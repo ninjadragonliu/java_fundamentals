@@ -37,6 +37,10 @@ public abstract class Digimon {
             System.out.println(this.name + " defended the attack!");
         }
     }
+    // Method to add attacks
+    public void addAttack(Attack attack) {
+        attacks.add(attack);
+    }
     public void takeDamage(int damage) {
         hp -= damage;
 
