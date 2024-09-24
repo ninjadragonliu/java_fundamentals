@@ -28,8 +28,15 @@ public abstract class Digimon {
     }
     public abstract void attack(Digimon digimon);
 
-    public abstract void defense(Digimon digimon);
-
+    // Method to defend
+    public void defend(int damage) {
+        int actualDamage = damage - this.defense;
+        if (actualDamage > 0) {
+            takeDamage(actualDamage);
+        } else {
+            System.out.println(this.name + " defended the attack!");
+        }
+    }
     public void takeDamage(int damage) {
         hp -= damage;
 

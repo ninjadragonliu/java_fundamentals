@@ -10,9 +10,4 @@ public class Gabumon extends Digimon {
 
     }
 
-    @Override
-    public void defense(Digimon digimon) {
-
-    }
-
 }
