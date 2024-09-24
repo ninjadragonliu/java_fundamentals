@@ -5,4 +5,14 @@ public class Agumon extends Digimon{
     public Agumon(String name, int hp, int attack, int defense, int speed) {
         super(name, hp, attack, defense, speed);
     }
+
+    @Override
+    public void attack(Digimon digimon) {
+
+    }
+
+    @Override
+    public void defense(Digimon digimon) {
+
+    }
 }
