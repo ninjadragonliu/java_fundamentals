@@ -11,7 +11,7 @@ public class Test2 {
     }
     public static void main(String[] args) {
         Test someObject = new Test();
-        someObject.someMethod();
+        //someObject.someMethod(); // error - someMethod() is protected in Test
         someObject.someMethod2();
     }
 }
