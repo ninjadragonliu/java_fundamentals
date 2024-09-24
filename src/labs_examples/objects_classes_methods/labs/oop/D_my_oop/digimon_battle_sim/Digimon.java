@@ -19,5 +19,21 @@ public abstract class Digimon {
         this.level = level;
         this.experience = experience;
     }
+    public abstract void attack(Digimon digimon);
+
+    public abstract void defense(Digimon digimon);
+
+    public void takeDamage(int damage) {
+        hp -= damage;
+
+        if (hp < 0) {
+            hp = 0;
+            System.out.println(name + " has been defeated!");
+        }
+    }
+
+    public int getHp() {
+        return hp;
+    }
 
 }
