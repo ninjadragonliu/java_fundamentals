@@ -3,6 +3,7 @@ package labs_examples.objects_classes_methods.labs.oop.D_my_oop.digimon_battle_s
 public abstract class Digimon {
 
     protected String name;
+    protected String type;
     protected int hp;
     protected int attack;
     protected int defense;
@@ -10,8 +11,9 @@ public abstract class Digimon {
     protected int level;
     protected int experience;
 
-    public Digimon(String name, int hp, int attack, int defense, int speed) {
+    public Digimon(String name, String type, int hp, int attack, int defense, int speed) {
         this.name = name;
+        this.type = type;
         this.hp = hp;
         this.attack = attack;
         this.defense = defense;
