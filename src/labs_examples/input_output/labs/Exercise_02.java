@@ -1,5 +1,7 @@
 package labs_examples.input_output.labs;
 
+import java.io.*;
+
 /**
  * Input/Output Exercise 2: File encryption
  *
@@ -12,3 +14,53 @@ package labs_examples.input_output.labs;
  *
  */
 
+public class Exercise_02 {
+
+    public static void main(String[] args) throws IOException {
+        String inputFile = "src/labs_examples/input_output/files/KtoD.txt";
+        String outputFile = "src/labs_examples/input_output/files/KtoD_enc.txt";
+
+        // Encrypt the file
+        encryptFile(inputFile, outputFile);
+
+        // Decrypt the file
+        decryptFile(outputFile);
+    }
+    public static void encryptFile(String inputFile, String outputFile) {
+            try(BufferedReader br = new BufferedReader(new FileReader(inputFile));
+                BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile)))
+            {
+
+                String line;
+                while((line = br.readLine()) != null) {
+                    String result = line.replaceAll("a", "-").replaceAll("e", "~");
+                    bw.write(result);
+                    bw.newLine();
+                }
+
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+    public static void decryptFile(String outputFile) throws IOException {
+        try (BufferedReader br = new BufferedReader(new FileReader(outputFile))) {
+            int character;
+            while ((character = br.read()) != -1) {
+                char c = (char) character;
+                switch (c) {
+                    case '-':
+                        System.out.print('a');
+                        break;
+                    case '~':
+                        System.out.print('e');
+                        break;
+                    default:
+                        System.out.print(c);
+                }
+            }
+        } catch (IOException e) {
+            System.err.println("Error decrypting file: " + e.getMessage());
+        }
+    }
+}
