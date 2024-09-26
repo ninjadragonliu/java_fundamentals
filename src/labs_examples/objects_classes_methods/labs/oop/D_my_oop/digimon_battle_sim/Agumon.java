@@ -14,4 +14,10 @@ public class Agumon extends Digimon{
         System.out.println(this.name + " uses " + chosenAttack.getName() + "!");
         target.defend(chosenAttack.getDamage());
     }
+
+    @Override
+    public Digimon digivolve() {
+        System.out.println(this.name + " is digivolving into Greymon!");
+        return new Greymon();
+    }
 }
