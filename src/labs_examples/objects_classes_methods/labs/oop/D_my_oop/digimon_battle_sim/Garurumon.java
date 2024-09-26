@@ -12,4 +12,10 @@ public class Garurumon extends Digimon{
     public void attack(Digimon target, Attack chosenAttack) {
 
     }
+
+    @Override
+    public Digimon digivolve() {
+        System.out.println(this.name + " is digivolving into WereGarurumon!");
+        return new WereGarurumon();
+    }
 }
