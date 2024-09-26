@@ -3,7 +3,7 @@ package labs_examples.objects_classes_methods.labs.oop.D_my_oop.digimon_battle_s
 public class WereGarurumon extends Digimon{
 
     public WereGarurumon() {
-        super("WereGarurumon", "Data", 125, 45, 45, 30);
+        super("WereGarurumon", "Data", 195, 55, 55, 40);
         this.addAttack(new Attack("Howling Blaster", 40));
         this.addAttack(new Attack("Freeze Fang", 35));
     }
