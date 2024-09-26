@@ -54,5 +54,8 @@ public abstract class Digimon {
     public int getHp() {
         return hp;
     }
-
+    // A placeholder method for evolution
+    public Digimon digivolve() {
+        return this; // By default, the Digimon doesn't evolve
+    }
 }
