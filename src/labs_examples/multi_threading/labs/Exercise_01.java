@@ -13,6 +13,8 @@ public class Exercise_01 {
         MyThread myThread = new MyThread();
         Thread t = new Thread(myThread, "MyThread");
         t.start();
+
+        new Thread(new MyThread(), "MyThread2").start();
     }
 }
 
