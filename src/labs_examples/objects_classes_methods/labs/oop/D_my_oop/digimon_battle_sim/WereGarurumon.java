@@ -12,4 +12,9 @@ public class WereGarurumon extends Digimon{
     public void attack(Digimon target, Attack chosenAttack) {
 
     }
+
+    @Override
+    public Digimon digivolve() {
+        return null;
+    }
 }
