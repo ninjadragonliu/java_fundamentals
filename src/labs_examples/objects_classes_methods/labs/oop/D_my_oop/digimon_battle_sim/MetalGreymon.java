@@ -7,4 +7,9 @@ public class MetalGreymon extends Digimon{
         this.addAttack(new Attack("Nova Blast", 50));
         this.addAttack(new Attack("Great Horn Attack", 60));
     }
+
+    @Override
+    public void attack(Digimon target, Attack chosenAttack) {
+
+    }
 }
