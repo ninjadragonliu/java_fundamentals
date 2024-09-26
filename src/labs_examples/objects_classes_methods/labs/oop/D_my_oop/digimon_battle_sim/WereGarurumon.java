@@ -6,4 +6,10 @@ public class WereGarurumon extends Digimon{
         super("WereGarurumon", "Data", 125, 45, 45, 30);
         this.addAttack(new Attack("Howling Blaster", 40));
         this.addAttack(new Attack("Freeze Fang", 35));
+    }
+
+    @Override
+    public void attack(Digimon target, Attack chosenAttack) {
+
+    }
 }
