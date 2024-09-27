@@ -16,6 +16,7 @@ public class WereGarurumon extends Digimon{
 
     @Override
     public Digimon digivolve() {
-        return null;
+        System.out.println(this.name + " is digivolving into MetalGarurumon!");
+        return new MetalGarurumon();
     }
 }
