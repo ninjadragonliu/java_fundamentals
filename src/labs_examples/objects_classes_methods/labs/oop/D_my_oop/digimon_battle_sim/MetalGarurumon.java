@@ -7,4 +7,14 @@ public class MetalGarurumon extends Digimon {
         this.addAttack(new Attack("Fire", 50));
         this.addAttack(new Attack("Great Horn Attack", 60));
     }
+
+    @Override
+    public void attack(Digimon target, Attack chosenAttack) {
+
+    }
+
+    @Override
+    public Digimon digivolve() {
+        return null;
+    }
 }
