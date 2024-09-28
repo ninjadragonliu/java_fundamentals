@@ -3,7 +3,7 @@ package labs_examples.objects_classes_methods.labs.oop.D_my_oop.digimon_battle_s
 public class WarGreymon extends Digimon{
 
     public WarGreymon() {
-        super("WarGreymon", "Vaccine", 200, 65, 45, 35);
+        super("WarGreymon", "Vaccine", 350, 80, 60, 55);
         this.addAttack(new Attack("Nova Blast", 50));
         this.addAttack(new Attack("Great Horn Attack", 60));
     }
