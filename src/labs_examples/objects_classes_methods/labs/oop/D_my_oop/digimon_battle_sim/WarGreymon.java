@@ -4,8 +4,9 @@ public class WarGreymon extends Digimon{
 
     public WarGreymon() {
         super("WarGreymon", "Vaccine", 350, 80, 60, 55);
-        this.addAttack(new Attack("Nova Blast", 50));
-        this.addAttack(new Attack("Great Horn Attack", 60));
+        this.addAttack(new Attack("Gaia Force", 80));
+        this.addAttack(new Attack("Great Tornado", 75));
+        this.addAttack(new Attack("Dramon Killer", 70));
     }
 
     @Override
