@@ -1,6 +1,7 @@
 package labs_examples.objects_classes_methods.labs.oop.D_my_oop.digimon_battle_sim;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
 public abstract class Digimon {
 
@@ -56,4 +57,12 @@ public abstract class Digimon {
     }
     // A placeholder method for evolution
     public abstract Digimon digivolve();
+
+    public String getName() {
+        return name;
+    }
+
+    public ArrayList<Attack> getAttacks() {
+        return attacks;
+    }
 }
