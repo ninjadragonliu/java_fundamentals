@@ -11,7 +11,7 @@ public class WarGreymon extends Digimon{
 
     @Override
     public void attack(Digimon target, Attack chosenAttack) {
-        System.out.println(this.name + " uses " + chosenAttack.getName() + "!");
+        //System.out.println(this.name + " uses " + chosenAttack.getName() + "!");
         target.defend(chosenAttack.getDamage());
     }
 
