@@ -45,11 +45,6 @@ public abstract class Digimon {
     }
     public void takeDamage(int damage) {
         hp -= damage;
-
-        if (hp < 0) {
-            hp = 0;
-            System.out.println(name + " has been defeated!");
-        }
     }
 
     public int getHp() {
