@@ -12,6 +12,8 @@ public abstract class Digimon {
     protected int speed;
     protected int level;
     protected int experience;
+    protected int maxLevel;
+    protected int experienceLevelThreshold;
     protected ArrayList<Attack> attacks;
 
     public Digimon(String name, String type, int hp, int attack, int defense, int speed) {
@@ -29,6 +31,19 @@ public abstract class Digimon {
     }
     // Abstract method to attack
     public abstract void attack(Digimon target, Attack chosenAttack);
+
+    public void gainExperience(int exp) {
+        this.experience += exp;
+        levelUp();
+    }
+
+    public void levelUp() {
+        if (this.experience >= this.experienceLevelThreshold) {
+            this.level++;
+            this.experience = 0;
+            this.experienceLevelThreshold *= 2;
+        }
+    }
 
     // Method to defend
     public void defend(int damage) {
