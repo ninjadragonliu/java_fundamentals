@@ -21,8 +21,6 @@ public abstract class Digimon {
         this.attack = attack;
         this.defense = defense;
         this.speed = speed;
-        this.level = level;
-        this.experience = experience;
 
         this.attacks = new ArrayList<>();
     }
