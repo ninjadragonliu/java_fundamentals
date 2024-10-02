@@ -20,7 +20,7 @@ public class GameController {
         System.out.println("Choose your Digimon: Agumon or Gabumon");
         String playerChoice = sc.nextLine();
 
-        Digimon playerDigimon = null;
+        Digimon playerDigimon;
         if (playerChoice.equalsIgnoreCase("Agumon")) {
             playerDigimon = new Agumon();
         } else if (playerChoice.equalsIgnoreCase("Gabumon")) {
