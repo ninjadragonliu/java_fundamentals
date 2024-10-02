@@ -49,7 +49,7 @@ public class GameController {
             }
             String action = sc.nextLine();
             if(action.equalsIgnoreCase("digivolve")) {
-                playerDigimon.digivolve();
+                playerDigimon = playerDigimon.digivolve();
                 continue;
             }
             if(action.equalsIgnoreCase("attack")) {
