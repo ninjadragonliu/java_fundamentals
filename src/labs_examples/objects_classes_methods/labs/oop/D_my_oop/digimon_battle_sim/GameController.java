@@ -1,13 +1,10 @@
 package labs_examples.objects_classes_methods.labs.oop.D_my_oop.digimon_battle_sim;
 
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
 public class GameController {
-
-    public static void main(String[] args) {
-        startGame();
-    }
     public static void startGame() {
         System.out.println("Starting game...");
         Scanner sc = new Scanner(System.in);
@@ -39,20 +36,27 @@ public class GameController {
         // Main battle loop
         while (playerDigimon.getHp() > 0 && enemyDigimon.getHp() > 0) {
             // Player's turn
-            System.out.println("Choose your attack:");
-            for (int i = 0; i < playerDigimon.getAttacks().size(); i++) {
-                System.out.println((i + 1) + ". " + playerDigimon.getAttacks().get(i).getName());
+            System.out.println("Choose your action:");
+
+            String action = sc.nextLine();
+            if(action.equalsIgnoreCase("digivolve")) {
+                playerDigimon.digivolve();
+                continue;
             }
+            if(action.equalsIgnoreCase("attack")) {
+                for (int i = 0; i < playerDigimon.getAttacks().size(); i++) {
+                    System.out.println((i + 1) + ". " + playerDigimon.getAttacks().get(i).getName());
+                }
 
-            int attackChoice = sc.nextInt();
-            Attack chosenAttack = playerDigimon.getAttacks().get(attackChoice - 1);
-            System.out.println(playerDigimon.getName() + " uses " + chosenAttack.getName() + "!");
-            playerDigimon.attack(enemyDigimon, chosenAttack);
-
-            // Check if enemy is defeated
-            if (enemyDigimon.getHp() <= 0) {
-                System.out.println(enemyDigimon.getName() + " has been defeated! You win!");
-                break;
+                int attackChoice = sc.nextInt();
+                Attack chosenAttack = playerDigimon.getAttacks().get(attackChoice - 1);
+                System.out.println(playerDigimon.getName() + " uses " + chosenAttack.getName() + "!");
+                playerDigimon.attack(enemyDigimon, chosenAttack);
+                // Check if enemy is defeated
+                if (enemyDigimon.getHp() <= 0) {
+                    System.out.println(enemyDigimon.getName() + " has been defeated! You win!");
+                    break;
+                }
             }
 
             // Enemy's turn
