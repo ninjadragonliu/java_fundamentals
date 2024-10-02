@@ -9,6 +9,10 @@ public class GameController {
         System.out.println("Starting game...");
         Scanner sc = new Scanner(System.in);
         Random rand = new Random();
+        ArrayList<Action> actions = new ArrayList<>();
+        actions.add(new Action("Attack"));
+        actions.add(new Action("Defend"));
+        actions.add(new Action("Digivolve"));
 
         System.out.println("Choose your Digimon: Agumon or Gabumon");
         String playerChoice = sc.nextLine();
@@ -37,7 +41,9 @@ public class GameController {
         while (playerDigimon.getHp() > 0 && enemyDigimon.getHp() > 0) {
             // Player's turn
             System.out.println("Choose your action:");
-
+            for(int i = 0; i < actions.size(); i++) {
+                System.out.println((i + 1) + ". " + actions.get(i).getName());
+            }
             String action = sc.nextLine();
             if(action.equalsIgnoreCase("digivolve")) {
                 playerDigimon.digivolve();
