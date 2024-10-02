@@ -5,6 +5,9 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class GameController {
+    public static void main(String[] args) {
+        startGame();
+    }
     public static void startGame() {
         System.out.println("Starting game...");
         Scanner sc = new Scanner(System.in);
