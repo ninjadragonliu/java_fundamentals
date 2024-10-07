@@ -10,4 +10,19 @@ import java.util.ArrayList;
 
 class Demo{
 
+    public static void main(String[] args) {
+
+    }
+
+}
+
+public class Exercise_02 <T extends Number> {
+    T num;
+
+    public T getNum() {
+        return num;
+    }
+    public void setNum(T num) {
+        this.num = num;
+    }
 }
