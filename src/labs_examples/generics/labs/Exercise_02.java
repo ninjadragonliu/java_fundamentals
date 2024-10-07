@@ -11,20 +11,20 @@ import java.util.ArrayList;
 class Demo{
 
     public static void main(String[] args) {
-
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        Exercise_02<Integer> demo = new Exercise_02();
+        ArrayList<Integer> list = new ArrayList<>();
         list.add(1);
         list.add(2);
         list.add(3);
-
-        System.out.println(Exercise_02.sum(list));
+        double result = demo.sum(list);
+        System.out.println(result);
     }
 
 }
 
 public class Exercise_02 <T extends Number> {
 
-    public static <T extends Number> double sum(ArrayList<T> list) {
+    public double sum(ArrayList<T> list) {
         double sum = 0;
         for (T t : list) {
             sum += t.doubleValue();
