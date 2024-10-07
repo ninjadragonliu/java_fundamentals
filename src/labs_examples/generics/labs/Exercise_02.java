@@ -17,12 +17,12 @@ class Demo{
 }
 
 public class Exercise_02 <T extends Number> {
-    T num;
 
-    public T getNum() {
-        return num;
-    }
-    public void setNum(T num) {
-        this.num = num;
+    public static <T extends Number> double sum(ArrayList<T> list) {
+        double sum = 0;
+        for (T t : list) {
+            sum += t.doubleValue();
+        }
+        return sum;
     }
 }
