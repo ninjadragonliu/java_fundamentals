@@ -24,4 +24,12 @@ public class Exercise_03 {
         return num1.doubleValue() + num2.doubleValue();
 
     }
+
+    public static void main(String args[]) {
+        double sum = sum(10, 20);
+        System.out.println(sum);
+
+
+
+    }
 }
