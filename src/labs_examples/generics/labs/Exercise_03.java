@@ -25,6 +25,16 @@ public class Exercise_03 {
 
     }
 
+    public static <T extends Collection<String>> int countPalindromes(T list) {
+        int count = 0;
+        for (String s : list) {
+            if (s.equals(new StringBuilder(s).reverse().toString())) {
+                count++;
+            }
+        }
+        return count;
+    }
+
     public static void main(String args[]) {
         double sum = sum(10, 20);
         System.out.println(sum);
