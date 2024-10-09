@@ -35,6 +35,13 @@ public class Exercise_03 {
         return count;
     }
 
+    public static <T> T[] exchange(T[] arr, int index1, int index2) {
+        T temp = arr[index1];
+        arr[index1] = arr[index2];
+        arr[index2] = temp;
+        return arr;
+    }
+
     public static void main(String args[]) {
         double sum = sum(10, 20);
         System.out.println(sum);
@@ -46,6 +53,10 @@ public class Exercise_03 {
         int count = countPalindromes(list);
         System.out.println(count);
 
-
+        int[] arr = {1, 2, 3, 4, 5};
+        int[] result = exchange(arr, 0, 3);
+        for (int i : result) {
+            System.out.print(i + " ");
+        }
     }
 }
