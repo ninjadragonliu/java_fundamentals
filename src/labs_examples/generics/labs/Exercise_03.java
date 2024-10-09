@@ -36,6 +36,9 @@ public class Exercise_03 {
     }
 
     public static <T> T[] exchange(T[] arr, int index1, int index2) {
+        if (index1 < 0 || index1 >= arr.length || index2 < 0 || index2 >= arr.length) {
+            throw new IndexOutOfBoundsException("Indices out of bounds");
+        }
         T temp = arr[index1];
         arr[index1] = arr[index2];
         arr[index2] = temp;
@@ -53,8 +56,12 @@ public class Exercise_03 {
         int count = countPalindromes(list);
         System.out.println(count);
 
-        int[] arr = {1, 2, 3, 4, 5};
-        int[] result = exchange(arr, 0, 3);
+        Integer[] arr = {1, 2, 3, 4, 5};
+        for(int i: arr) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+        Integer[] result = exchange(arr, 0, 3);
         for (int i : result) {
             System.out.print(i + " ");
         }
