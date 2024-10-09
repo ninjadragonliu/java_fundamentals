@@ -39,6 +39,12 @@ public class Exercise_03 {
         double sum = sum(10, 20);
         System.out.println(sum);
 
+        ArrayList<String> list = new ArrayList<>();
+        list.add("hello");
+        list.add("world");
+        list.add("racecar");
+        int count = countPalindromes(list);
+        System.out.println(count);
 
 
     }
