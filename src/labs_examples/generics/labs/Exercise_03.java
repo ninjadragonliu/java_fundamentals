@@ -45,6 +45,16 @@ public class Exercise_03 {
         return arr;
     }
 
+    public static <T extends Comparable<T>> T max(T[] arr, int begin, int end) {
+        T max = arr[begin];
+        for (int i = begin + 1; i < end; i++) {
+            if (arr[i].compareTo(max) > 0) {
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+
     public static void main(String args[]) {
         double sum = sum(10, 20);
         System.out.println(sum);
@@ -65,5 +75,8 @@ public class Exercise_03 {
         for (int i : result) {
             System.out.print(i + " ");
         }
+
+        System.out.println();
+        System.out.println(max(arr, 0, 5));
     }
 }
