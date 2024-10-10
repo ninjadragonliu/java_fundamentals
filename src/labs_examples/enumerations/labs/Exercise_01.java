@@ -8,3 +8,20 @@ package labs_examples.enumerations.labs;
  *      of this enum from a separate class.
  */
 
+public class Exercise_01 {
+}
+
+enum Months {
+    JANUARY,
+    FEBRUARY,
+    MARCH,
+    APRIL,
+    MAY,
+    JUNE,
+    JULY,
+    AUGUST,
+    SEPTEMBER,
+    OCTOBER,
+    NOVEMBER,
+    DECEMBER
+}
