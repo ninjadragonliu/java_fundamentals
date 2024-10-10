@@ -1,5 +1,7 @@
 package labs_examples.enumerations.labs;
 
+import java.util.Scanner;
+
 /**
  * Enumerations Exercise 1:
  *
@@ -9,6 +11,9 @@ package labs_examples.enumerations.labs;
  */
 
 public class Exercise_01 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+    }
 }
 
 enum Months {
