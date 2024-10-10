@@ -20,40 +20,40 @@ public class Exercise_01 {
                 System.out.print(Months.JANUARY);
                 break;
             case 2:
-                System.out.println("February");
+                System.out.print(Months.FEBRUARY);
                 break;
             case 3:
-                System.out.println("March");
+                System.out.print(Months.MARCH);
                 break;
             case 4:
-                System.out.println("April");
+                System.out.print(Months.APRIL);
                 break;
             case 5:
-                System.out.println("May");
+                System.out.print(Months.MAY);
                 break;
             case 6:
-                System.out.println("June");
+                System.out.print(Months.JUNE);
                 break;
             case 7:
-                System.out.println("July");
+                System.out.print(Months.JULY);
                 break;
             case 8:
-                System.out.println("August");
+                System.out.print(Months.AUGUST);
                 break;
             case 9:
-                System.out.println("September");
+                System.out.print(Months.SEPTEMBER);
                 break;
             case 10:
-                System.out.println("October");
+                System.out.print(Months.OCTOBER);
                 break;
             case 11:
-                System.out.println("November");
+                System.out.print(Months.NOVEMBER);
                 break;
             case 12:
-                System.out.println("December");
+                System.out.print(Months.DECEMBER);
                 break;
             default:
-                System.out.println("Invalid month");
+                System.out.print("Invalid month");
         }
     }
 }
