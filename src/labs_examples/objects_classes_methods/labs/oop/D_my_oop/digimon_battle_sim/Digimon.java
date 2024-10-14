@@ -15,6 +15,7 @@ public abstract class Digimon {
     protected int maxLevel;
     protected int experienceLevelThreshold;
     protected ArrayList<Attack> attacks;
+    protected boolean isDefending = false;
 
     public Digimon(String name, String type, int hp, int attack, int defense, int speed) {
         this.name = name;
@@ -45,6 +46,11 @@ public abstract class Digimon {
         }
     }
 
+    // Method to defend
+    public void defend() {
+        this.isDefending = true;
+        System.out.println(this.name + " is defending!");
+    }
     // Method to add attacks
     public void addAttack(Attack attack) {
         attacks.add(attack);
