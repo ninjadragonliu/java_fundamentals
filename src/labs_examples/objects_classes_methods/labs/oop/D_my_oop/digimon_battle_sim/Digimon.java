@@ -56,6 +56,11 @@ public abstract class Digimon {
         attacks.add(attack);
     }
     public void takeDamage(int damage) {
+        if (isDefending) {
+            damage /= 2; // Reduce damage by half if defending
+            System.out.println(this.name + " defended and reduced the damage to " + damage + "!");
+            this.isDefending = false; // Reset defending state after taking damage
+        }
         hp -= damage;
     }
 
