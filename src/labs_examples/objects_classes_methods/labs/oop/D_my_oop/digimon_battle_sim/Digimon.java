@@ -45,15 +45,6 @@ public abstract class Digimon {
         }
     }
 
-    // Method to defend
-    public void defend(int damage) {
-        int actualDamage = damage - this.defense;
-        if (actualDamage > 0) {
-            takeDamage(actualDamage);
-        } else {
-            System.out.println(this.name + " defended the attack!");
-        }
-    }
     // Method to add attacks
     public void addAttack(Attack attack) {
         attacks.add(attack);
