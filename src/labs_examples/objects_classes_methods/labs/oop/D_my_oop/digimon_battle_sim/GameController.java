@@ -67,9 +67,9 @@ public class GameController {
                     break;
                 }
             }
-            //            if(action.equalsIgnoreCase("defend")) {
-//                playerDigimon.defend();
-//            }
+            if(action.equalsIgnoreCase("defend")) {
+                playerDigimon.defend();
+            }
             // Enemy's turn
             System.out.println("Enemy's turn...");
             Attack enemyAttack = enemyDigimon.getAttacks().get(rand.nextInt(enemyDigimon.getAttacks().size()));
