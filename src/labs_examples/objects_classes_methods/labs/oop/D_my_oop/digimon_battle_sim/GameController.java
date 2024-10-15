@@ -95,16 +95,15 @@ public class GameController {
         System.out.println("Choose your Digimon: Agumon or Gabumon");
         String playerChoice = sc.nextLine();
 
-        Digimon playerDigimon;
+
         if (playerChoice.equalsIgnoreCase("Agumon")) {
-            playerDigimon = new Agumon();
+            return new Agumon();
         } else if (playerChoice.equalsIgnoreCase("Gabumon")) {
-            playerDigimon = new Gabumon();
+            return new Gabumon();
         } else {
             System.out.println("Invalid choice! Defaulting to Agumon.");
-            playerDigimon = new Agumon();
+            return new Agumon();
         }
-        return playerDigimon;
 
 
     }
