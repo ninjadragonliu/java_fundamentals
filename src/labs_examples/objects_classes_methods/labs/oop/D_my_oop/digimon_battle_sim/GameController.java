@@ -38,7 +38,8 @@ public class GameController {
             for(int i = 0; i < actions.size(); i++) {
                 System.out.println((i + 1) + ". " + actions.get(i).getName());
             }
-            String action = sc.nextLine();
+            int actionChoice = sc.nextInt();
+            String action = actions.get(actionChoice - 1).getName();
             if(action.equalsIgnoreCase("digivolve")) {
                 playerDigimon = playerDigimon.digivolve();
                 continue;
