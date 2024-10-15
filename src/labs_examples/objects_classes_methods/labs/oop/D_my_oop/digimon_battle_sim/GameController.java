@@ -6,10 +6,11 @@ import java.util.Scanner;
 
 public class GameController {
     public static void main(String[] args) {
+        System.out.println("Starting game...");
         startGame();
     }
     public static void startGame() {
-        System.out.println("Starting game...");
+
         Scanner sc = new Scanner(System.in);
         Random rand = new Random();
         ArrayList<Action> actions = new ArrayList<>();
@@ -89,4 +90,23 @@ public class GameController {
 
         System.out.println("Game Over.");
     }
+    private static Digimon chooseDigimon(Scanner sc) {
+
+        System.out.println("Choose your Digimon: Agumon or Gabumon");
+        String playerChoice = sc.nextLine();
+
+        Digimon playerDigimon;
+        if (playerChoice.equalsIgnoreCase("Agumon")) {
+            playerDigimon = new Agumon();
+        } else if (playerChoice.equalsIgnoreCase("Gabumon")) {
+            playerDigimon = new Gabumon();
+        } else {
+            System.out.println("Invalid choice! Defaulting to Agumon.");
+            playerDigimon = new Agumon();
+        }
+        return playerDigimon;
+
+
+    }
+
 }
